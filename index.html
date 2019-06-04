@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <title>Cats are great!</title>
   </head>
   <body>
     <h2>Cats make great pets for <em>almost</em> anyone. Here are some reasons why:</h2>
-    <ul>
-      <li>Cats clean <strong>themselves</strong></li>
-      <li>Cats are <strong>independent</strong></li>
+      <div class="container">
         <ul>
-          <li>They can use a litter box</li>
-          <li>They can feed themselves when hungry</li>
+          <li>Cats clean <strong>themselves</strong></li>
+          <li>Cats are <strong>independent</strong></li>
+            <ul>
+              <li>They can use a litter box</li>
+              <li>They can feed themselves when hungry</li>
+            </ul>
+          <li>Cats are <strong>playful</strong></li>
         </ul>
-      <li>Cats are <strong>playful</strong></li>
-    </ul>
 
-    <img src="img/cat.jpg" alt="picture of a cat">
+        <img src="img/cat.jpg" alt="picture of a cat">
 
-    <p>For more info on cats check <a href="https://en.wikipedia.org/wiki/Cat">here</a></p> 
+        <p>For more info on cats check <a href="https://en.wikipedia.org/wiki/Cat">here</a></p>
+      </div>
+    <div class="container">
+      <button class="btn btn-light" id="lightsOn">Lights On</button>
+      <button class="btn btn-dark" id="lightsOff">Lights Off</button>
+    </div>
   </body>
 </html>
